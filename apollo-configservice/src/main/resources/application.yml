@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: apollo-configservice
+  profiles:
+    active: ${apollo_profile}
+  datasource:
+    url: jdbc:mysql://121.5.64.212:3306/ApolloConfigDB?characterEncoding=utf8
+    username: root
+    password: root
+
+ctrip:
+  appid: 100003171
+
+server:
+  port: 17001
+
+logging:
+  file: /opt/logs/100003171/apollo-configservice.log
